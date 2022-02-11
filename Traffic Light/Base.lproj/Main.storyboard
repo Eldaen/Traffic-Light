@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Traffic_Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="1Vf-Z4-LrR">
+                                <rect key="frame" x="157" y="236" width="100" height="424"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INI-JX-s19">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="oVj-8I-9hs"/>
+                                            <constraint firstAttribute="width" constant="100" id="rXu-BS-aFv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMB-by-uHW">
+                                        <rect key="frame" x="0.0" y="162" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Op-3n-fy1">
+                                        <rect key="frame" x="0.0" y="324" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fMB-by-uHW" firstAttribute="height" secondItem="INI-JX-s19" secondAttribute="height" id="KGh-My-BDc"/>
+                                    <constraint firstItem="fMB-by-uHW" firstAttribute="width" secondItem="INI-JX-s19" secondAttribute="width" id="MbL-k2-ikZ"/>
+                                    <constraint firstItem="6Op-3n-fy1" firstAttribute="height" secondItem="INI-JX-s19" secondAttribute="height" id="OSS-ty-VxW"/>
+                                    <constraint firstItem="6Op-3n-fy1" firstAttribute="width" secondItem="INI-JX-s19" secondAttribute="width" id="h4Y-r7-AJI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Vf-Z4-LrR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PPP-uG-w4r"/>
+                            <constraint firstItem="1Vf-Z4-LrR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zJ8-oU-Rno"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greenLight" destination="6Op-3n-fy1" id="Sw2-ak-mdS"/>
+                        <outlet property="redLight" destination="INI-JX-s19" id="pi2-a4-HyR"/>
+                        <outlet property="stackView" destination="1Vf-Z4-LrR" id="7v6-om-sz4"/>
+                        <outlet property="yellowLight" destination="fMB-by-uHW" id="tDM-MQ-Jyw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
